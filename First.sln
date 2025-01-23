@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAppNetFramework", "FormsAppNetFramework\FormsAppNetFramework.csproj", "{1357B8A6-E93F-4D47-8792-DCB137CEB380}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDotNet", "ConsoleAppDotNet\ConsoleAppDotNet.csproj", "{92CCEAF0-3134-4D22-8E0F-685055C647BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1357B8A6-E93F-4D47-8792-DCB137CEB380}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1357B8A6-E93F-4D47-8792-DCB137CEB380}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1357B8A6-E93F-4D47-8792-DCB137CEB380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CCEAF0-3134-4D22-8E0F-685055C647BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CCEAF0-3134-4D22-8E0F-685055C647BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CCEAF0-3134-4D22-8E0F-685055C647BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CCEAF0-3134-4D22-8E0F-685055C647BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
