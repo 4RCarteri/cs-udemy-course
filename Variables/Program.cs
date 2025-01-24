@@ -2,6 +2,20 @@
 {
     internal class Program
     {
+        enum Grades
+        {
+            Min = 10,
+            Mean = 20,
+            Max = 30
+        }
+
+        struct Person
+        {
+            public string Name;
+            public int Age;
+            public int Birth;
+        }
+
         static void Main(string[] args)
         {
             #region integers
@@ -53,6 +67,40 @@
             var myVar2 = false;
             Console.WriteLine(myVar);
             Console.WriteLine(myVar2);
+            #endregion
+
+            #region object
+            object myObject = 5;
+            myObject = "w";
+            Console.WriteLine(myObject);
+            #endregion
+
+            #region constant
+            const double pi = 3.14159;
+            // myConst = 6; // Error
+            #endregion
+
+            #region enum
+            Grades grades = Grades.Mean;
+            Console.WriteLine(grades);
+            #endregion
+
+            #region struct
+            Person p1 = new Person();
+            p1.Name = "John";
+            p1.Age = 25;
+            p1.Birth = 1995;
+
+            Person p2 = new Person()
+            {
+                Name = "Amy",
+                Age = 26,
+                Birth = 1975
+            };
+
+            Console.WriteLine(p1.Name);
+            p2.Age = 25;
+            Console.WriteLine(p1.Age);
             #endregion
         }
     }
