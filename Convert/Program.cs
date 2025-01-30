@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Convert
+namespace Conversion
 {
     internal class Program
     {
@@ -27,6 +27,17 @@ namespace Convert
             byte num2= (byte) num1;
             Console.WriteLine(num2); // 232
             #endregion
+
+            #region Parse
+            string txtNumber = "100";
+            int number = int.Parse(txtNumber);
+            #endregion
+
+            #region Convert
+            string text = Convert.ToString(2500);
+
+            #endregion
+
         }
     }
 }
