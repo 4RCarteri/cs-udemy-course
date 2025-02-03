@@ -43,11 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Access.cs" />
     <Compile Include="ClassMethod.cs" />
+    <Compile Include="Delegate.cs" />
     <Compile Include="Methods.cs" />
     <Compile Include="OtherClass.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="PersonAttributes.cs" />
+    <Compile Include="PersonMethods.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

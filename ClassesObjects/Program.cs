@@ -8,6 +8,8 @@ namespace ClassesObjects
 {
     internal class Program
     {
+        delegate void Operaction(int n1, int n2);
+
         static void Main(string[] args)
         {
             #region Classes an objects
@@ -38,6 +40,39 @@ namespace ClassesObjects
             Methods methods = new Methods();
             methods.Greet();
             methods.Sum(5, 10);
+            #endregion
+
+            #region Methods with reference
+            int value = 10;
+            methods.SumValue(value);
+            Console.WriteLine("Value: {0}", value);
+
+            methods.Sum10(ref value);
+            Console.WriteLine("Value: {0}", value);
+            #endregion
+
+            #region Methods overloading
+            int n = methods.Sum(5, 10, 15);
+            int n3 = methods.Sum(5, 10);
+
+            Console.WriteLine("Sum 3: {0}", n3);
+            Console.WriteLine("Sum 2: {0}", n);
+            #endregion
+
+            #region Delegate
+            Console.WriteLine("Delegate");
+            Delegate @delegate = new Delegate();
+
+            Operaction operaction = null;
+            operaction += @delegate.Sum;
+            operaction += @delegate.Multiply;
+            operaction += @delegate.Divide;
+            operaction += @delegate.Subtract;
+
+            operaction(2,2);
+
+            operaction -= @delegate.Subtract;
+            operaction(2, 2);
             #endregion
         }
     }
