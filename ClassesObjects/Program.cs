@@ -74,6 +74,17 @@ namespace ClassesObjects
             operaction -= @delegate.Subtract;
             operaction(2, 2);
             #endregion
+
+            #region Heritage
+            Car car = new Car();
+            car.Start();
+            car.MaxSpeed = 200;
+
+            Bike bike = new Bike();
+            bike.Start();
+            bike.Model = "Mountain Bike";
+
+            #endregion
         }
     }
 
