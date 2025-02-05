@@ -64,7 +64,7 @@ namespace RegistrationSystem
                 return;
             }
 
-            if (txtPhone.Text == "")
+            if (txtPhone.Text == "(  )      -")
             {
                 MessageBox.Show("Please enter a phone number.");
                 txtPhone.Focus();
@@ -110,7 +110,9 @@ namespace RegistrationSystem
             
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            int index = list.SelectedIndex;
+            people.RemoveAt(index);
+            List();
         }
 
         private void btnClean_Click(object sender, EventArgs e)
