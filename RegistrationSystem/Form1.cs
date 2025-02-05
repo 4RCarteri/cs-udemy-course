@@ -48,9 +48,66 @@ namespace RegistrationSystem
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            int index = -1;
+            foreach (Person person in people)
+            {
+                if (person.Name == txtName.Text)
+                {
+                    index = people.IndexOf(p);
+                }
+            }
 
+            if (txtName.Text == "")
+            {
+                MessageBox.Show("Please enter a name.");
+                txtName.Focus();
+                return;
+            }
+
+            if (txtPhone.Text == "")
+            {
+                MessageBox.Show("Please enter a phone number.");
+                txtPhone.Focus();
+                return;
+            }
+
+            char sex;
+            if (radioM.Checked)
+            {
+                sex = 'M';
+            }
+            else if (radioF.Checked)
+            {
+                sex = 'F';
+            }
+            else (radioO.Checked)
+            {
+                sex = 'O';
+            }
+
+            Person p = new Person();
+            p.Name = txtName.Text;
+            p.DateBirth = txtData.Text;
+            p.MaritalState = comboMS.SelectedItem.ToString();
+            p.Phone = txtPhone.Text;
+            p.HasHouse = checkHouse.Checked;
+            p.HasVehicle = checkVehicle.Checked;
+            p.Sex = sex;
+
+            if (index < 0)
+            {
+                people.Add(p);
+            }
+            else
+            {
+                people[index] = p;
+            }
+
+            btnClean_Click(btnClean, EventArgs.Empty);
+            List();
         }
 
+            
         private void btnDelete_Click(object sender, EventArgs e)
         {
 

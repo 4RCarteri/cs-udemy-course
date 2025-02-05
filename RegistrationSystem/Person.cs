@@ -9,8 +9,8 @@ namespace RegistrationSystem
     internal class Person
     {
         public string Name { get; set; }
-        public string Birth { get; set; }
-        public string MAritalState { get; set; }
+        public string DateBirth { get; set; }
+        public string MaritalState { get; set; }
         public string Phone { get; set; }
         public bool HasHouse { get; set; }
         public bool HasVehicle { get; set; }
