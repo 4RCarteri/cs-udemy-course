@@ -208,6 +208,7 @@
             this.btnRegister.TabIndex = 12;
             this.btnRegister.Text = "Register / Alter";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnDelete
             // 
@@ -217,6 +218,7 @@
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClean
             // 
@@ -226,6 +228,7 @@
             this.btnClean.TabIndex = 14;
             this.btnClean.Text = "Clean";
             this.btnClean.UseVisualStyleBackColor = true;
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // Form1
             // 
