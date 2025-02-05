@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace RegistrationSystem
 {
-    public partial class Form1 : Form
+    public partial class Form : System.Windows.Forms.Form
     {
         List<Person> people;
 
-        public Form1()
+        public Form()
         {
             InitializeComponent();
             people = new List<Person>();
@@ -53,7 +53,7 @@ namespace RegistrationSystem
             {
                 if (person.Name == txtName.Text)
                 {
-                    index = people.IndexOf(p);
+                    index = people.IndexOf(person);
                 }
             }
 
@@ -80,7 +80,7 @@ namespace RegistrationSystem
             {
                 sex = 'F';
             }
-            else (radioO.Checked)
+            else
             {
                 sex = 'O';
             }
@@ -115,7 +115,17 @@ namespace RegistrationSystem
 
         private void btnClean_Click(object sender, EventArgs e)
         {
+            txtData.Text = "";
+            txtName.Text = "";
+            txtPhone.Text = "";
+            comboMS.SelectedIndex = 0;
+            radioM.Checked = true;
+            radioO.Checked = false;
+            radioF.Checked = false;
+            checkHouse.Checked = false;
+            checkVehicle.Checked = false;
 
+            txtName.Focus();
         }
 
         private void List() { 
