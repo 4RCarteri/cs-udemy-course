@@ -39,9 +39,9 @@
             this.checkHouse = new System.Windows.Forms.CheckBox();
             this.checkVehicle = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioM = new System.Windows.Forms.RadioButton();
-            this.radioF = new System.Windows.Forms.RadioButton();
             this.radioO = new System.Windows.Forms.RadioButton();
+            this.radioF = new System.Windows.Forms.RadioButton();
+            this.radioM = new System.Windows.Forms.RadioButton();
             this.list = new System.Windows.Forms.ListBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -157,16 +157,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sex";
             // 
-            // radioM
+            // radioO
             // 
-            this.radioM.AutoSize = true;
-            this.radioM.Location = new System.Drawing.Point(7, 20);
-            this.radioM.Name = "radioM";
-            this.radioM.Size = new System.Drawing.Size(48, 17);
-            this.radioM.TabIndex = 0;
-            this.radioM.TabStop = true;
-            this.radioM.Text = "Male";
-            this.radioM.UseVisualStyleBackColor = true;
+            this.radioO.AutoSize = true;
+            this.radioO.Location = new System.Drawing.Point(7, 66);
+            this.radioO.Name = "radioO";
+            this.radioO.Size = new System.Drawing.Size(51, 17);
+            this.radioO.TabIndex = 2;
+            this.radioO.TabStop = true;
+            this.radioO.Text = "Other";
+            this.radioO.UseVisualStyleBackColor = true;
             // 
             // radioF
             // 
@@ -179,16 +179,16 @@
             this.radioF.Text = "Female";
             this.radioF.UseVisualStyleBackColor = true;
             // 
-            // radioO
+            // radioM
             // 
-            this.radioO.AutoSize = true;
-            this.radioO.Location = new System.Drawing.Point(7, 66);
-            this.radioO.Name = "radioO";
-            this.radioO.Size = new System.Drawing.Size(51, 17);
-            this.radioO.TabIndex = 2;
-            this.radioO.TabStop = true;
-            this.radioO.Text = "Other";
-            this.radioO.UseVisualStyleBackColor = true;
+            this.radioM.AutoSize = true;
+            this.radioM.Location = new System.Drawing.Point(7, 20);
+            this.radioM.Name = "radioM";
+            this.radioM.Size = new System.Drawing.Size(48, 17);
+            this.radioM.TabIndex = 0;
+            this.radioM.TabStop = true;
+            this.radioM.Text = "Male";
+            this.radioM.UseVisualStyleBackColor = true;
             // 
             // list
             // 
@@ -250,6 +250,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
