@@ -138,5 +138,30 @@ namespace RegistrationSystem
             }
 
         }
+
+        private void list_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Person p = people[list.SelectedIndex];
+
+            txtName.Text = p.Name;
+            txtData.Text = p.DateBirth;
+            comboMS.SelectedItem = p.MaritalState;
+            txtPhone.Text = p.Phone;
+            checkHouse.Checked = p.HasHouse;
+            checkVehicle.Checked = p.HasVehicle;
+
+            switch (p.Sex)
+            {
+                case 'M':
+                    radioM.Checked = true;
+                    break;
+                case 'F':
+                    radioF.Checked = true;
+                    break;
+                case 'O':
+                    radioO.Checked = true;
+                    break;
+            }
+        }
     }
 }

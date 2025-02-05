@@ -140,9 +140,9 @@
             this.checkVehicle.AutoSize = true;
             this.checkVehicle.Location = new System.Drawing.Point(178, 274);
             this.checkVehicle.Name = "checkVehicle";
-            this.checkVehicle.Size = new System.Drawing.Size(130, 17);
+            this.checkVehicle.Size = new System.Drawing.Size(88, 17);
             this.checkVehicle.TabIndex = 9;
-            this.checkVehicle.Text = "Do you have vehicle?";
+            this.checkVehicle.Text = "Has vehicle?";
             this.checkVehicle.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -199,6 +199,7 @@
             this.list.Name = "list";
             this.list.Size = new System.Drawing.Size(1001, 204);
             this.list.TabIndex = 11;
+            this.list.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.list_MouseDoubleClick);
             // 
             // btnRegister
             // 
@@ -250,6 +251,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Name);
+            this.Name = "Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Form1_Load);
