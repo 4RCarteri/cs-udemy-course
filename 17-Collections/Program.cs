@@ -188,6 +188,28 @@ namespace _17_Collections
 
             Console.WriteLine("First element:" + namesQueue.Peek());
             #endregion
+
+            #region Stack
+            // Stack is a collection of objects that are inserted and removed in LIFO (Last In First Out) order
+            Console.WriteLine("\n\n\nStack");
+
+            Stack<string> namesStack = new Stack<string>();
+
+            namesStack.Push("Poi");
+            namesStack.Push("John");
+            namesStack.Push("Abil");
+
+            namesStack.Push("James Bond");
+
+            namesStack.Pop();
+
+            foreach (string n in namesStack)
+            {
+                Console.WriteLine(n);
+            }
+
+            Console.WriteLine("First element:" + namesStack.Peek());
+            #endregion
         }
     }
 }
