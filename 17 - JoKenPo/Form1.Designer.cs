@@ -61,9 +61,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(92, 211);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 25);
+            this.label1.Size = new System.Drawing.Size(102, 25);
             this.label1.TabIndex = 4;
-            this.label1.Text = "YOU";
+            this.label1.Text = "PLAYER";
             // 
             // label2
             // 
@@ -114,6 +114,7 @@
             this.btnPaper.Size = new System.Drawing.Size(200, 200);
             this.btnPaper.TabIndex = 10;
             this.btnPaper.UseVisualStyleBackColor = true;
+            this.btnPaper.Click += new System.EventHandler(this.btnPaper_Click);
             // 
             // btnScissors
             // 
@@ -124,6 +125,7 @@
             this.btnScissors.Size = new System.Drawing.Size(200, 200);
             this.btnScissors.TabIndex = 11;
             this.btnScissors.UseVisualStyleBackColor = true;
+            this.btnScissors.Click += new System.EventHandler(this.btnScissors_Click);
             // 
             // btnStone
             // 
@@ -134,6 +136,7 @@
             this.btnStone.Size = new System.Drawing.Size(218, 200);
             this.btnStone.TabIndex = 9;
             this.btnStone.UseVisualStyleBackColor = true;
+            this.btnStone.Click += new System.EventHandler(this.btnStone_Click);
             // 
             // picResult
             // 
