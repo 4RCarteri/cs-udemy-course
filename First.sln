@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginSystem", "LoginSystem\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17-Collections", "17-Collections\17-Collections.csproj", "{5A5A6CAA-1749-4A32-8463-AA93E7F165EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17 - JoKenPo", "17 - JoKenPo\17 - JoKenPo.csproj", "{7634F96A-E000-4B07-8C94-C294C6A9F1BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{5A5A6CAA-1749-4A32-8463-AA93E7F165EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A5A6CAA-1749-4A32-8463-AA93E7F165EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A5A6CAA-1749-4A32-8463-AA93E7F165EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7634F96A-E000-4B07-8C94-C294C6A9F1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7634F96A-E000-4B07-8C94-C294C6A9F1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7634F96A-E000-4B07-8C94-C294C6A9F1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7634F96A-E000-4B07-8C94-C294C6A9F1BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
