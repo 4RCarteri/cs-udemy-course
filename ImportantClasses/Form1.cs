@@ -29,5 +29,16 @@ namespace ImportantClasses
             DialogResult dialogResult = MessageBox.Show("Message to show", "Message title", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             lblResult.Text = dialogResult.ToString();
         }
+
+        private void btnRandom_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            Random random1 = new Random(DateTime.Now.Millisecond);
+
+            int value = random.Next(1, 100);
+            double v = random1.NextDouble();
+
+            lblResult.Text = v.ToString();
+        }
     }
 }
