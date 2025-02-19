@@ -18,9 +18,9 @@ namespace _17___JoKenPo
 
         public static Image[] images =
         {
-            Image.FromFile("images/Pedra.png"),
-            Image.FromFile("images/Papel.png"),
-            Image.FromFile("images/Tesoura.png")
+            Image.FromFile("images/Rock.png"),
+            Image.FromFile("images/Paper.png"),
+            Image.FromFile("images/Scissors.png")
         };
 
         public Image ImgPC { get; private set; }

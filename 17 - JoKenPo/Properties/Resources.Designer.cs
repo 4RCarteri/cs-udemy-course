@@ -63,9 +63,9 @@ namespace _17___JoKenPo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Empatar {
+        internal static System.Drawing.Bitmap Draw {
             get {
-                object obj = ResourceManager.GetObject("Empatar", resourceCulture);
+                object obj = ResourceManager.GetObject("Draw", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace _17___JoKenPo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ganhar {
+        internal static System.Drawing.Bitmap Lose {
             get {
-                object obj = ResourceManager.GetObject("Ganhar", resourceCulture);
+                object obj = ResourceManager.GetObject("Lose", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace _17___JoKenPo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Papel {
+        internal static System.Drawing.Bitmap Paper {
             get {
-                object obj = ResourceManager.GetObject("Papel", resourceCulture);
+                object obj = ResourceManager.GetObject("Paper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace _17___JoKenPo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pedra {
+        internal static System.Drawing.Bitmap Scissors {
             get {
-                object obj = ResourceManager.GetObject("Pedra", resourceCulture);
+                object obj = ResourceManager.GetObject("Scissors", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace _17___JoKenPo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pedra1 {
+        internal static System.Drawing.Bitmap Stone {
             get {
-                object obj = ResourceManager.GetObject("Pedra1", resourceCulture);
+                object obj = ResourceManager.GetObject("Stone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,19 +113,9 @@ namespace _17___JoKenPo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Perder {
+        internal static System.Drawing.Bitmap Win {
             get {
-                object obj = ResourceManager.GetObject("Perder", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Tesoura {
-            get {
-                object obj = ResourceManager.GetObject("Tesoura", resourceCulture);
+                object obj = ResourceManager.GetObject("Win", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

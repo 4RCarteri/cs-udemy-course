@@ -31,7 +31,7 @@
             this.labelTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelResult = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnPaper = new System.Windows.Forms.Button();
@@ -52,14 +52,13 @@
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(775, 117);
             this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "Chose: Stone, paper or scissors";
-            this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
+            this.labelTitle.Text = "Chose: Rock, paper or scissors";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(92, 211);
+            this.label1.Location = new System.Drawing.Point(79, 211);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 25);
             this.label1.TabIndex = 4;
@@ -69,21 +68,21 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(372, 211);
+            this.label2.Location = new System.Drawing.Point(375, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "PC";
             // 
-            // label3
+            // labelResult
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(630, 211);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 25);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "?";
+            this.labelResult.AutoSize = true;
+            this.labelResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResult.Location = new System.Drawing.Point(626, 211);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(25, 25);
+            this.labelResult.TabIndex = 6;
+            this.labelResult.Text = "?";
             // 
             // label4
             // 
@@ -107,7 +106,7 @@
             // 
             // btnPaper
             // 
-            this.btnPaper.BackgroundImage = global::_17___JoKenPo.Properties.Resources.Papel;
+            this.btnPaper.BackgroundImage = global::_17___JoKenPo.Properties.Resources.Paper;
             this.btnPaper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPaper.Location = new System.Drawing.Point(300, 352);
             this.btnPaper.Name = "btnPaper";
@@ -118,7 +117,7 @@
             // 
             // btnScissors
             // 
-            this.btnScissors.BackgroundImage = global::_17___JoKenPo.Properties.Resources.Tesoura;
+            this.btnScissors.BackgroundImage = global::_17___JoKenPo.Properties.Resources.Scissors;
             this.btnScissors.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnScissors.Location = new System.Drawing.Point(549, 352);
             this.btnScissors.Name = "btnScissors";
@@ -129,9 +128,9 @@
             // 
             // btnStone
             // 
-            this.btnStone.BackgroundImage = global::_17___JoKenPo.Properties.Resources.Pedra;
+            this.btnStone.BackgroundImage = global::_17___JoKenPo.Properties.Resources.Stone;
             this.btnStone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnStone.Location = new System.Drawing.Point(35, 352);
+            this.btnStone.Location = new System.Drawing.Point(45, 352);
             this.btnStone.Name = "btnStone";
             this.btnStone.Size = new System.Drawing.Size(218, 200);
             this.btnStone.TabIndex = 9;
@@ -140,6 +139,7 @@
             // 
             // picResult
             // 
+            this.picResult.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picResult.Location = new System.Drawing.Point(549, 123);
             this.picResult.Name = "picResult";
             this.picResult.Size = new System.Drawing.Size(200, 200);
@@ -148,6 +148,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(300, 125);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(200, 200);
@@ -156,6 +157,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(35, 123);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
@@ -172,7 +174,7 @@
             this.Controls.Add(this.btnStone);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelResult);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picResult);
@@ -198,7 +200,7 @@
         private System.Windows.Forms.PictureBox picResult;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelResult;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnStone;
