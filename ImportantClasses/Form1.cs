@@ -88,5 +88,15 @@ namespace ImportantClasses
 
             btnColor.ForeColor = lblResult.ForeColor;
         }
+
+        private void btnFont_Click(object sender, EventArgs e)
+        {
+            Font font = new Font("Helvetica, Arial, Comic Sans MS", 24, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Pixel);
+
+            lblResult.Text = font.Name;
+            lblResult.Font = font;
+
+            lbl2.Font = new Font(FontFamily.GenericMonospace, 12, FontStyle.Regular, GraphicsUnit.Pixel);
+        }
     }
 }
