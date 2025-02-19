@@ -34,11 +34,12 @@
             this.btnTimeSpan = new System.Windows.Forms.Button();
             this.btnDateTime = new System.Windows.Forms.Button();
             this.lbl2 = new System.Windows.Forms.Label();
+            this.btnColor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox
             // 
-            this.btnMessageBox.Location = new System.Drawing.Point(12, 366);
+            this.btnMessageBox.Location = new System.Drawing.Point(12, 285);
             this.btnMessageBox.Name = "btnMessageBox";
             this.btnMessageBox.Size = new System.Drawing.Size(208, 72);
             this.btnMessageBox.TabIndex = 0;
@@ -57,7 +58,7 @@
             // 
             // btnRandom
             // 
-            this.btnRandom.Location = new System.Drawing.Point(226, 366);
+            this.btnRandom.Location = new System.Drawing.Point(226, 285);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(208, 72);
             this.btnRandom.TabIndex = 2;
@@ -67,7 +68,7 @@
             // 
             // btnTimeSpan
             // 
-            this.btnTimeSpan.Location = new System.Drawing.Point(440, 366);
+            this.btnTimeSpan.Location = new System.Drawing.Point(440, 285);
             this.btnTimeSpan.Name = "btnTimeSpan";
             this.btnTimeSpan.Size = new System.Drawing.Size(208, 72);
             this.btnTimeSpan.TabIndex = 3;
@@ -77,7 +78,7 @@
             // 
             // btnDateTime
             // 
-            this.btnDateTime.Location = new System.Drawing.Point(654, 366);
+            this.btnDateTime.Location = new System.Drawing.Point(654, 285);
             this.btnDateTime.Name = "btnDateTime";
             this.btnDateTime.Size = new System.Drawing.Size(208, 72);
             this.btnDateTime.TabIndex = 4;
@@ -94,11 +95,22 @@
             this.lbl2.TabIndex = 5;
             this.lbl2.Text = "label1";
             // 
+            // btnColor
+            // 
+            this.btnColor.Location = new System.Drawing.Point(12, 366);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(208, 72);
+            this.btnColor.TabIndex = 6;
+            this.btnColor.Text = "Color";
+            this.btnColor.UseVisualStyleBackColor = true;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 450);
+            this.Controls.Add(this.btnColor);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.btnDateTime);
             this.Controls.Add(this.btnTimeSpan);
@@ -120,6 +132,7 @@
         private System.Windows.Forms.Button btnTimeSpan;
         private System.Windows.Forms.Button btnDateTime;
         private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Button btnColor;
     }
 }
 

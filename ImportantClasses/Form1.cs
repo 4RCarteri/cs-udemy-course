@@ -77,5 +77,16 @@ namespace ImportantClasses
             lblResult.Text = dateTime.DayOfWeek.ToString();
             lblResult.Text = dateTime.DayOfYear.ToString();
         }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+            lblResult.BackColor = Color.DarkGreen;
+            lblResult.ForeColor = Color.FromArgb(120, 255, 255, 255);
+            lblResult.ForeColor = Color.FromArgb(100, Color.Red);
+            lblResult.ForeColor = Color.FromKnownColor(KnownColor.Control);
+            lblResult.ForeColor = Color.FromName("Red");
+
+            btnColor.ForeColor = lblResult.ForeColor;
+        }
     }
 }
