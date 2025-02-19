@@ -56,5 +56,26 @@ namespace ImportantClasses
 
             lblResult.Text = interval.TotalHours.ToString();
         }
+
+        private void btnDateTime_Click(object sender, EventArgs e)
+        {
+            lblResult.Text = DateTime.Now.ToString();
+            lblResult.Text = DateTime.Today.ToString();
+            lblResult.Text = DateTime.DaysInMonth(2021, 2).ToString();
+            lblResult.Text = DateTime.IsLeapYear(2021).ToString();
+            lblResult.Text = DateTime.Now.ToLongDateString();
+            lblResult.Text = DateTime.Now.ToShortDateString();
+            lblResult.Text = DateTime.Now.ToLongTimeString();
+            lblResult.Text = DateTime.Now.ToShortTimeString();
+            lblResult.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+            DateTime dateTime = new DateTime(2021, 2, 1);
+            lblResult.Text = dateTime.ToString();
+            TimeSpan timeSpan = new TimeSpan(1, 2, 3,5,8);
+            lbl2.Text = dateTime.Add(timeSpan).ToString();
+
+            lblResult.Text = dateTime.DayOfWeek.ToString();
+            lblResult.Text = dateTime.DayOfYear.ToString();
+        }
     }
 }
