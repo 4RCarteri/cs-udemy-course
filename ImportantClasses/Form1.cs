@@ -40,5 +40,21 @@ namespace ImportantClasses
 
             lblResult.Text = v.ToString();
         }
+
+        private void btnTimeSpan_Click(object sender, EventArgs e)
+        {
+            TimeSpan timeSpan = TimeSpan.FromMinutes(30);
+            lblResult.Text = timeSpan.ToString();
+
+            lblResult.Text = TimeSpan.TicksPerMinute.ToString();
+
+            TimeSpan begin = new TimeSpan(1, 2, 0);
+            TimeSpan end = new TimeSpan(2, 3, 0);
+            TimeSpan interval = end - begin;
+
+            TimeSpan timeSpan1 = begin.Add(end);
+
+            lblResult.Text = interval.TotalHours.ToString();
+        }
     }
 }
