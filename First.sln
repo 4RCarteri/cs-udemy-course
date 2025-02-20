@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportantClasses", "Importa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads", "Threads\Threads.csproj", "{FBF31F0C-2D54-49F9-ADDF-E9E3B76C7149}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks", "Task\Tasks.csproj", "{43079A13-B8AA-491A-AC1F-1EBD77FB2270}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{FBF31F0C-2D54-49F9-ADDF-E9E3B76C7149}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBF31F0C-2D54-49F9-ADDF-E9E3B76C7149}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBF31F0C-2D54-49F9-ADDF-E9E3B76C7149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43079A13-B8AA-491A-AC1F-1EBD77FB2270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43079A13-B8AA-491A-AC1F-1EBD77FB2270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43079A13-B8AA-491A-AC1F-1EBD77FB2270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43079A13-B8AA-491A-AC1F-1EBD77FB2270}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
