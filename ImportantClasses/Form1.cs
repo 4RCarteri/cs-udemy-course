@@ -98,5 +98,26 @@ namespace ImportantClasses
 
             lbl2.Font = new Font(FontFamily.GenericMonospace, 12, FontStyle.Regular, GraphicsUnit.Pixel);
         }
+
+        private void btnEnv_Click(object sender, EventArgs e)
+        {
+            string myDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string curDir = Environment.CurrentDirectory = "C:\\";
+            string path = Environment.GetEnvironmentVariable("Path");
+            string userName = Environment.UserName;
+            string userDomainName = Environment.UserDomainName;
+            int processorCount = Environment.ProcessorCount;
+
+            lblResult.Text = "Docs:" + myDocs + "\n" + "Dir:" + curDir + "\n" + "Path:" + path + "\n" + "User:" + userName + "\n" + "Domain:" + userDomainName + "\n" + "Processor:" + processorCount;
+        }
+
+        private void btnApplication_Click(object sender, EventArgs e)
+        {
+            //Application.Exit();
+            string executablePath = Application.ExecutablePath;
+            string startupPath = Application.StartupPath;
+            Application.Restart();
+            lblResult.Text = executablePath;
+        }
     }
 }
