@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -42,6 +43,13 @@ namespace _19_FormDetails
 
             // When the second form is closed, the current form will be displayed
             Show();
+        }
+
+        private void btnSecondFromThread_Click(object sender, EventArgs e)
+        {
+            Close();
+            Thread t = new Thread(() => Application.Run(new SecondForm()));
+            t.Start();
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lblSecond = new System.Windows.Forms.Label();
+            this.btnMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSecond
@@ -41,11 +42,22 @@
             this.lblSecond.TabIndex = 0;
             this.lblSecond.Text = "Second Form";
             // 
+            // btnMain
+            // 
+            this.btnMain.Location = new System.Drawing.Point(12, 396);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(169, 42);
+            this.btnMain.TabIndex = 1;
+            this.btnMain.Text = "Main";
+            this.btnMain.UseVisualStyleBackColor = true;
+            this.btnMain.Click += new System.EventHandler(this.btnMain_Click);
+            // 
             // SecondForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMain);
             this.Controls.Add(this.lblSecond);
             this.Name = "SecondForm";
             this.Text = "SecondForm";
@@ -57,5 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblSecond;
+        private System.Windows.Forms.Button btnMain;
     }
 }

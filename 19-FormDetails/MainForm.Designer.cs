@@ -30,6 +30,7 @@
         {
             this.lblMain = new System.Windows.Forms.Label();
             this.btnSecond = new System.Windows.Forms.Button();
+            this.btnSecondFromThread = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblMain
@@ -53,11 +54,22 @@
             this.btnSecond.UseVisualStyleBackColor = true;
             this.btnSecond.Click += new System.EventHandler(this.btnSecond_Click);
             // 
+            // btnSecondFromThread
+            // 
+            this.btnSecondFromThread.Location = new System.Drawing.Point(190, 390);
+            this.btnSecondFromThread.Name = "btnSecondFromThread";
+            this.btnSecondFromThread.Size = new System.Drawing.Size(172, 48);
+            this.btnSecondFromThread.TabIndex = 2;
+            this.btnSecondFromThread.Text = "Second Form Thread";
+            this.btnSecondFromThread.UseVisualStyleBackColor = true;
+            this.btnSecondFromThread.Click += new System.EventHandler(this.btnSecondFromThread_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSecondFromThread);
             this.Controls.Add(this.btnSecond);
             this.Controls.Add(this.lblMain);
             this.Name = "MainForm";
@@ -73,6 +85,7 @@
 
         private System.Windows.Forms.Label lblMain;
         private System.Windows.Forms.Button btnSecond;
+        private System.Windows.Forms.Button btnSecondFromThread;
     }
 }
 
