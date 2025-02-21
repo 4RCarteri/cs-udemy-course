@@ -101,20 +101,25 @@
             this.toolStripSeparator1,
             this.mFileExit});
             this.menuFile.Name = "menuFile";
+            this.menuFile.ShortcutKeyDisplayString = "";
             this.menuFile.Size = new System.Drawing.Size(37, 23);
             this.menuFile.Text = "File";
             // 
             // mFileNew
             // 
+            this.mFileNew.Image = global::_19_FormDetails.Properties.Resources.New;
             this.mFileNew.Name = "mFileNew";
-            this.mFileNew.Size = new System.Drawing.Size(103, 22);
+            this.mFileNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.mFileNew.Size = new System.Drawing.Size(180, 22);
             this.mFileNew.Text = "New";
             this.mFileNew.Click += new System.EventHandler(this.mFileNew_Click);
             // 
             // mFileOpen
             // 
+            this.mFileOpen.Image = global::_19_FormDetails.Properties.Resources.Open;
             this.mFileOpen.Name = "mFileOpen";
-            this.mFileOpen.Size = new System.Drawing.Size(103, 22);
+            this.mFileOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.mFileOpen.Size = new System.Drawing.Size(180, 22);
             this.mFileOpen.Text = "Open";
             this.mFileOpen.Click += new System.EventHandler(this.mFileOpen_Click);
             // 
@@ -125,8 +130,10 @@
             // 
             // mFileExit
             // 
+            this.mFileExit.Image = global::_19_FormDetails.Properties.Resources.Exit;
             this.mFileExit.Name = "mFileExit";
-            this.mFileExit.Size = new System.Drawing.Size(103, 22);
+            this.mFileExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F)));
+            this.mFileExit.Size = new System.Drawing.Size(180, 22);
             this.mFileExit.Text = "Exit";
             this.mFileExit.Click += new System.EventHandler(this.mFileExit_Click);
             // 
