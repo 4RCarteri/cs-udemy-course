@@ -61,7 +61,7 @@
             // btnSecond
             // 
             this.btnSecond.Location = new System.Drawing.Point(8, 253);
-            this.btnSecond.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSecond.Margin = new System.Windows.Forms.Padding(2);
             this.btnSecond.Name = "btnSecond";
             this.btnSecond.Size = new System.Drawing.Size(115, 31);
             this.btnSecond.TabIndex = 1;
@@ -72,7 +72,7 @@
             // btnSecondFromThread
             // 
             this.btnSecondFromThread.Location = new System.Drawing.Point(127, 253);
-            this.btnSecondFromThread.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSecondFromThread.Margin = new System.Windows.Forms.Padding(2);
             this.btnSecondFromThread.Name = "btnSecondFromThread";
             this.btnSecondFromThread.Size = new System.Drawing.Size(115, 31);
             this.btnSecondFromThread.TabIndex = 2;
@@ -107,25 +107,28 @@
             // mFileNew
             // 
             this.mFileNew.Name = "mFileNew";
-            this.mFileNew.Size = new System.Drawing.Size(180, 22);
+            this.mFileNew.Size = new System.Drawing.Size(103, 22);
             this.mFileNew.Text = "New";
+            this.mFileNew.Click += new System.EventHandler(this.mFileNew_Click);
             // 
             // mFileOpen
             // 
             this.mFileOpen.Name = "mFileOpen";
-            this.mFileOpen.Size = new System.Drawing.Size(180, 22);
+            this.mFileOpen.Size = new System.Drawing.Size(103, 22);
             this.mFileOpen.Text = "Open";
+            this.mFileOpen.Click += new System.EventHandler(this.mFileOpen_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(100, 6);
             // 
             // mFileExit
             // 
             this.mFileExit.Name = "mFileExit";
-            this.mFileExit.Size = new System.Drawing.Size(180, 22);
+            this.mFileExit.Size = new System.Drawing.Size(103, 22);
             this.mFileExit.Text = "Exit";
+            this.mFileExit.Click += new System.EventHandler(this.mFileExit_Click);
             // 
             // menuHelp
             // 
@@ -141,31 +144,35 @@
             this.mHelpAboutDev,
             this.mHelpAboutVersion});
             this.mHelpAbout.Name = "mHelpAbout";
-            this.mHelpAbout.Size = new System.Drawing.Size(180, 22);
+            this.mHelpAbout.Size = new System.Drawing.Size(107, 22);
             this.mHelpAbout.Text = "About";
             // 
             // mHelpAboutDev
             // 
             this.mHelpAboutDev.Name = "mHelpAboutDev";
-            this.mHelpAboutDev.Size = new System.Drawing.Size(180, 22);
+            this.mHelpAboutDev.Size = new System.Drawing.Size(145, 22);
             this.mHelpAboutDev.Text = "Develompent";
+            this.mHelpAboutDev.Click += new System.EventHandler(this.mHelpAboutDev_Click);
             // 
             // mHelpAboutVersion
             // 
             this.mHelpAboutVersion.Name = "mHelpAboutVersion";
-            this.mHelpAboutVersion.Size = new System.Drawing.Size(180, 22);
+            this.mHelpAboutVersion.Size = new System.Drawing.Size(145, 22);
             this.mHelpAboutVersion.Text = "Version";
+            this.mHelpAboutVersion.Click += new System.EventHandler(this.mHelpAboutVersion_Click);
             // 
             // menuComb
             // 
             this.menuComb.Name = "menuComb";
             this.menuComb.Size = new System.Drawing.Size(121, 23);
+            this.menuComb.SelectedIndexChanged += new System.EventHandler(this.menuComb_SelectedIndexChanged);
             // 
             // mSearch
             // 
             this.mSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.mSearch.Name = "mSearch";
             this.mSearch.Size = new System.Drawing.Size(100, 23);
+            this.mSearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.mSearch_KeyUp);
             // 
             // MainForm
             // 
@@ -177,7 +184,7 @@
             this.Controls.Add(this.lblMain);
             this.Controls.Add(this.menuBar);
             this.MainMenuStrip = this.menuBar;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
