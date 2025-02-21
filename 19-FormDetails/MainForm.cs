@@ -30,16 +30,22 @@ namespace _19_FormDetails
 
         private void btnSecond_Click(object sender, EventArgs e)
         {
-            SecondForm secondForm = new SecondForm();
-
             // Hide() method is used to hide the current form
             Hide();
+
+            SecondForm secondForm = new SecondForm();
+            secondForm.Message = "Ricardo";
 
             // Show() method is used to display a non-modal dialog box
             //secondForm.Show();
 
             // ShowDialog() method is used to display a modal dialog box
             secondForm.ShowDialog();
+
+            if (secondForm.Message != null)
+            {
+                lblMain.Text = secondForm.Message;
+            }
 
             // When the second form is closed, the current form will be displayed
             Show();
