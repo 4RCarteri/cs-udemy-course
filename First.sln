@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19-FormMdi", "FormMdi\19-Fo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21-ErrorControl", "ErrorControl\21-ErrorControl.csproj", "{454E349A-A32B-4E57-868E-6F224E9A05ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22-File", "22-File\22-File.csproj", "{987E9E5C-E492-4655-A245-398C6D16B36D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{454E349A-A32B-4E57-868E-6F224E9A05ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{454E349A-A32B-4E57-868E-6F224E9A05ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{454E349A-A32B-4E57-868E-6F224E9A05ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987E9E5C-E492-4655-A245-398C6D16B36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987E9E5C-E492-4655-A245-398C6D16B36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987E9E5C-E492-4655-A245-398C6D16B36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987E9E5C-E492-4655-A245-398C6D16B36D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
