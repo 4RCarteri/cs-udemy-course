@@ -36,6 +36,10 @@ namespace ErrorControl
             {
                 MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                MessageBox.Show("The 'try catch' is finished", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
     }
