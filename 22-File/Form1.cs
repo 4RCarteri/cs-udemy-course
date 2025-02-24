@@ -116,5 +116,22 @@ namespace _22_File
             directoryInfo.Delete();
 
         }
+
+        private void btnWriteTxt_Click(object sender, EventArgs e)
+        {
+            StreamWriter sw = new StreamWriter(@"C:\test.txt");
+
+            // The difference between WriteLine and Write is that WriteLine adds a new line
+            sw.WriteLine(txtContent.Text);
+
+            sw.Write(txtContent.Text);
+
+            // Flush: clear the buffer
+            sw.Flush();
+
+            // Dispose: close the file
+            sw.Dispose();
+            sw.Close();
+        }
     }
 }

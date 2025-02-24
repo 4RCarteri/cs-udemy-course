@@ -36,6 +36,8 @@
             this.listDir = new System.Windows.Forms.ListBox();
             this.btnDirInfo = new System.Windows.Forms.Button();
             this.listDirInfo = new System.Windows.Forms.ListBox();
+            this.txtContent = new System.Windows.Forms.TextBox();
+            this.btnWriteTxt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExecute
@@ -112,11 +114,32 @@
             this.listDirInfo.Size = new System.Drawing.Size(109, 95);
             this.listDirInfo.TabIndex = 7;
             // 
+            // txtContent
+            // 
+            this.txtContent.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContent.Location = new System.Drawing.Point(622, 131);
+            this.txtContent.Multiline = true;
+            this.txtContent.Name = "txtContent";
+            this.txtContent.Size = new System.Drawing.Size(166, 85);
+            this.txtContent.TabIndex = 8;
+            // 
+            // btnWriteTxt
+            // 
+            this.btnWriteTxt.Location = new System.Drawing.Point(680, 383);
+            this.btnWriteTxt.Name = "btnWriteTxt";
+            this.btnWriteTxt.Size = new System.Drawing.Size(75, 23);
+            this.btnWriteTxt.TabIndex = 9;
+            this.btnWriteTxt.Text = "Write txt";
+            this.btnWriteTxt.UseVisualStyleBackColor = true;
+            this.btnWriteTxt.Click += new System.EventHandler(this.btnWriteTxt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnWriteTxt);
+            this.Controls.Add(this.txtContent);
             this.Controls.Add(this.listDirInfo);
             this.Controls.Add(this.btnDirInfo);
             this.Controls.Add(this.listDir);
@@ -142,6 +165,8 @@
         private System.Windows.Forms.ListBox listDir;
         private System.Windows.Forms.Button btnDirInfo;
         private System.Windows.Forms.ListBox listDirInfo;
+        private System.Windows.Forms.TextBox txtContent;
+        private System.Windows.Forms.Button btnWriteTxt;
     }
 }
 
