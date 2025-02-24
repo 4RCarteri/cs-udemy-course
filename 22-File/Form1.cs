@@ -76,5 +76,25 @@ namespace _22_File
                 listInfo.Items.Add("File does not exist");
             }
         }
+
+        private void btnDir_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\courseCS";
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+                listDir.Items.Add("Directory created");
+            }
+
+            string[] dirs = Directory.GetDirectories(path);
+
+            string[] files = Directory.GetFiles(path);
+
+            Directory.Delete(path, true);
+
+            string[] drives = Directory.GetLogicalDrives();
+            listDir.Items.AddRange(drives);
+        }
     }
 }
