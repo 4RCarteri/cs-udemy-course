@@ -133,5 +133,22 @@ namespace _22_File
             sw.Dispose();
             sw.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\teste.txt";
+            File.Create(path).Close();
+            StreamWriter sw = new StreamWriter(path);
+
+            sw.WriteLine("The difference between WriteLine and Write is that WriteLine adds a new line");
+            sw.Close();
+
+            StreamReader sr = new StreamReader(path);
+            txtRead.Text = sr.ReadToEnd();
+            txtRead.Text = sr.ReadLine();
+
+            sr.Close();
+            File.Delete(path);
+        }
     }
 }

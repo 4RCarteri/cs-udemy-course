@@ -38,6 +38,8 @@
             this.listDirInfo = new System.Windows.Forms.ListBox();
             this.txtContent = new System.Windows.Forms.TextBox();
             this.btnWriteTxt = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtRead = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnExecute
@@ -133,11 +135,31 @@
             this.btnWriteTxt.UseVisualStyleBackColor = true;
             this.btnWriteTxt.Click += new System.EventHandler(this.btnWriteTxt_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(844, 382);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Read txt";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtRead
+            // 
+            this.txtRead.Location = new System.Drawing.Point(810, 139);
+            this.txtRead.Multiline = true;
+            this.txtRead.Name = "txtRead";
+            this.txtRead.Size = new System.Drawing.Size(109, 87);
+            this.txtRead.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1092, 450);
+            this.Controls.Add(this.txtRead);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnWriteTxt);
             this.Controls.Add(this.txtContent);
             this.Controls.Add(this.listDirInfo);
@@ -167,6 +189,8 @@
         private System.Windows.Forms.ListBox listDirInfo;
         private System.Windows.Forms.TextBox txtContent;
         private System.Windows.Forms.Button btnWriteTxt;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtRead;
     }
 }
 
