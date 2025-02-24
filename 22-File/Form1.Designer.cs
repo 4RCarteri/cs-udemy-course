@@ -40,6 +40,8 @@
             this.btnWriteTxt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtRead = new System.Windows.Forms.TextBox();
+            this.bntBinRead = new System.Windows.Forms.Button();
+            this.txtBinRead = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnExecute
@@ -153,11 +155,30 @@
             this.txtRead.Size = new System.Drawing.Size(109, 87);
             this.txtRead.TabIndex = 11;
             // 
+            // bntBinRead
+            // 
+            this.bntBinRead.Location = new System.Drawing.Point(958, 381);
+            this.bntBinRead.Name = "bntBinRead";
+            this.bntBinRead.Size = new System.Drawing.Size(75, 23);
+            this.bntBinRead.TabIndex = 12;
+            this.bntBinRead.Text = "Read binary";
+            this.bntBinRead.UseVisualStyleBackColor = true;
+            this.bntBinRead.Click += new System.EventHandler(this.bntBinRead_Click);
+            // 
+            // txtBinRead
+            // 
+            this.txtBinRead.Location = new System.Drawing.Point(939, 139);
+            this.txtBinRead.Name = "txtBinRead";
+            this.txtBinRead.Size = new System.Drawing.Size(100, 20);
+            this.txtBinRead.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1092, 450);
+            this.Controls.Add(this.txtBinRead);
+            this.Controls.Add(this.bntBinRead);
             this.Controls.Add(this.txtRead);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnWriteTxt);
@@ -191,6 +212,8 @@
         private System.Windows.Forms.Button btnWriteTxt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtRead;
+        private System.Windows.Forms.Button bntBinRead;
+        private System.Windows.Forms.TextBox txtBinRead;
     }
 }
 

@@ -150,5 +150,27 @@ namespace _22_File
             sr.Close();
             File.Delete(path);
         }
+
+        private void bntBinRead_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\teste.txt";
+            File.Create(path).Close();
+            StreamWriter sw = new StreamWriter(path);
+
+            sw.WriteLine("The difference between WriteLine and Write is that WriteLine adds a new line");
+            sw.Close();
+
+            BinaryReader br = new BinaryReader(File.OpenRead(path));
+
+            while(br.BaseStream.Position < br.BaseStream.Length)
+            {
+                txtBinRead.Text += br.ReadByte().ToString() + " ";
+            }
+
+
+
+            br.Close();
+            byte[] buffer = File.ReadAllBytes(path);
+        }
     }
 }
