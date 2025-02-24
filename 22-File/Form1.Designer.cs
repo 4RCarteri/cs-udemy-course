@@ -34,6 +34,8 @@
             this.listInfo = new System.Windows.Forms.ListBox();
             this.btnDir = new System.Windows.Forms.Button();
             this.listDir = new System.Windows.Forms.ListBox();
+            this.btnDirInfo = new System.Windows.Forms.Button();
+            this.listDirInfo = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnExecute
@@ -92,11 +94,31 @@
             this.listDir.Size = new System.Drawing.Size(120, 95);
             this.listDir.TabIndex = 5;
             // 
+            // btnDirInfo
+            // 
+            this.btnDirInfo.Location = new System.Drawing.Point(552, 382);
+            this.btnDirInfo.Name = "btnDirInfo";
+            this.btnDirInfo.Size = new System.Drawing.Size(75, 23);
+            this.btnDirInfo.TabIndex = 6;
+            this.btnDirInfo.Text = "Directory Info";
+            this.btnDirInfo.UseVisualStyleBackColor = true;
+            this.btnDirInfo.Click += new System.EventHandler(this.btnDirInfo_Click);
+            // 
+            // listDirInfo
+            // 
+            this.listDirInfo.FormattingEnabled = true;
+            this.listDirInfo.Location = new System.Drawing.Point(507, 131);
+            this.listDirInfo.Name = "listDirInfo";
+            this.listDirInfo.Size = new System.Drawing.Size(109, 95);
+            this.listDirInfo.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listDirInfo);
+            this.Controls.Add(this.btnDirInfo);
             this.Controls.Add(this.listDir);
             this.Controls.Add(this.btnDir);
             this.Controls.Add(this.listInfo);
@@ -118,6 +140,8 @@
         private System.Windows.Forms.ListBox listInfo;
         private System.Windows.Forms.Button btnDir;
         private System.Windows.Forms.ListBox listDir;
+        private System.Windows.Forms.Button btnDirInfo;
+        private System.Windows.Forms.ListBox listDirInfo;
     }
 }
 

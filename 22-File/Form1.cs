@@ -96,5 +96,25 @@ namespace _22_File
             string[] drives = Directory.GetLogicalDrives();
             listDir.Items.AddRange(drives);
         }
+
+        private void btnDirInfo_Click(object sender, EventArgs e)
+        {
+            DirectoryInfo directoryInfo = new DirectoryInfo(@"C:\courseCS");
+
+            if (!directoryInfo.Exists)
+            {
+                directoryInfo.Create();
+            }
+
+            listDirInfo.Items.Add("Full name: " + directoryInfo.FullName);
+            listDirInfo.Items.Add("Name: " + directoryInfo.Name);
+            listDirInfo.Items.Add("Parent: " + directoryInfo.Parent);
+            listDirInfo.Items.Add("Root: " + directoryInfo.Root);
+            listDirInfo.Items.Add("Creation time: " + directoryInfo.CreationTime);
+            listDirInfo.Items.Add("Last access time: " + directoryInfo.LastAccessTime);
+
+            directoryInfo.Delete();
+
+        }
     }
 }
