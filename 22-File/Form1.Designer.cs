@@ -42,6 +42,8 @@
             this.txtRead = new System.Windows.Forms.TextBox();
             this.bntBinRead = new System.Windows.Forms.Button();
             this.txtBinRead = new System.Windows.Forms.TextBox();
+            this.txtWriteBinary = new System.Windows.Forms.TextBox();
+            this.btnWriteBin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExecute
@@ -172,11 +174,31 @@
             this.txtBinRead.Size = new System.Drawing.Size(100, 20);
             this.txtBinRead.TabIndex = 13;
             // 
+            // txtWriteBinary
+            // 
+            this.txtWriteBinary.Location = new System.Drawing.Point(1046, 139);
+            this.txtWriteBinary.Multiline = true;
+            this.txtWriteBinary.Name = "txtWriteBinary";
+            this.txtWriteBinary.Size = new System.Drawing.Size(100, 20);
+            this.txtWriteBinary.TabIndex = 14;
+            // 
+            // btnWriteBin
+            // 
+            this.btnWriteBin.Location = new System.Drawing.Point(1078, 381);
+            this.btnWriteBin.Name = "btnWriteBin";
+            this.btnWriteBin.Size = new System.Drawing.Size(75, 23);
+            this.btnWriteBin.TabIndex = 15;
+            this.btnWriteBin.Text = "Write binary";
+            this.btnWriteBin.UseVisualStyleBackColor = true;
+            this.btnWriteBin.Click += new System.EventHandler(this.btnWriteBin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1092, 450);
+            this.ClientSize = new System.Drawing.Size(1217, 450);
+            this.Controls.Add(this.btnWriteBin);
+            this.Controls.Add(this.txtWriteBinary);
             this.Controls.Add(this.txtBinRead);
             this.Controls.Add(this.bntBinRead);
             this.Controls.Add(this.txtRead);
@@ -214,6 +236,8 @@
         private System.Windows.Forms.TextBox txtRead;
         private System.Windows.Forms.Button bntBinRead;
         private System.Windows.Forms.TextBox txtBinRead;
+        private System.Windows.Forms.TextBox txtWriteBinary;
+        private System.Windows.Forms.Button btnWriteBin;
     }
 }
 

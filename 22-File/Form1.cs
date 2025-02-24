@@ -172,5 +172,22 @@ namespace _22_File
             br.Close();
             byte[] buffer = File.ReadAllBytes(path);
         }
+
+        private void btnWriteBin_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\teste.txt";
+            File.Create(path).Close();
+            StreamWriter sw = new StreamWriter(path);
+
+            sw.WriteLine("The difference between WriteLine and Write is that WriteLine adds a new line");
+            sw.Close();
+
+            BinaryWriter bw = new BinaryWriter(File.OpenWrite(path));
+
+            bw.Write("Hello");
+
+            bw.Close();
+
+        }
     }
 }
