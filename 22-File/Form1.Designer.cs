@@ -30,6 +30,8 @@
         {
             this.btnExecute = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
+            this.btnFileInfo = new System.Windows.Forms.Button();
+            this.listInfo = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnExecute
@@ -46,17 +48,37 @@
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(231, 69);
+            this.lblResult.Location = new System.Drawing.Point(25, 131);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(81, 29);
             this.lblResult.TabIndex = 1;
             this.lblResult.Text = "Result";
+            // 
+            // btnFileInfo
+            // 
+            this.btnFileInfo.Location = new System.Drawing.Point(177, 383);
+            this.btnFileInfo.Name = "btnFileInfo";
+            this.btnFileInfo.Size = new System.Drawing.Size(75, 23);
+            this.btnFileInfo.TabIndex = 2;
+            this.btnFileInfo.Text = "FileInfo Excecute";
+            this.btnFileInfo.UseVisualStyleBackColor = true;
+            this.btnFileInfo.Click += new System.EventHandler(this.btnFileInfo_Click);
+            // 
+            // listInfo
+            // 
+            this.listInfo.FormattingEnabled = true;
+            this.listInfo.Location = new System.Drawing.Point(125, 131);
+            this.listInfo.Name = "listInfo";
+            this.listInfo.Size = new System.Drawing.Size(214, 199);
+            this.listInfo.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listInfo);
+            this.Controls.Add(this.btnFileInfo);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnExecute);
             this.Name = "Form1";
@@ -70,6 +92,8 @@
 
         private System.Windows.Forms.Button btnExecute;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Button btnFileInfo;
+        private System.Windows.Forms.ListBox listInfo;
     }
 }
 

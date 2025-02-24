@@ -36,8 +36,11 @@ namespace _22_File
                 lblResult.Text = "File does not exist";
             }
 
-            File.Move(folder + file, folder + "move.txt");
-            lblResult.Text = "File moved";
+            if (File.Exists(folder + file))
+            {
+                File.Move(folder + file, folder + "move.txt");
+                lblResult.Text = "File moved";
+            }
 
             lblResult.Text = File.GetCreationTime(folder + file).ToString();
 
@@ -49,6 +52,29 @@ namespace _22_File
             File.Delete(folder + "move.txt");
             lblResult.Text = "File deleted";
 
+        }
+
+        private void btnFileInfo_Click(object sender, EventArgs e)
+        {
+            listInfo.Items.Clear();
+            File.Create(@"C:\test.txt").Close();
+            FileInfo fileInfo = new FileInfo(@"C:\test.txt");
+
+            if (fileInfo.Exists)
+            {
+                listInfo.Items.Add("Full name: " + fileInfo.FullName);
+                listInfo.Items.Add("Name: " + fileInfo.Name);
+                listInfo.Items.Add("Extension: " + fileInfo.Extension);
+                listInfo.Items.Add("Directory name: " + fileInfo.DirectoryName);
+                listInfo.Items.Add("Length: " + fileInfo.Length);
+                listInfo.Items.Add("Creation time: " + fileInfo.CreationTime);
+                listInfo.Items.Add("Last access time: " + fileInfo.LastAccessTime);
+                listInfo.Items.Add("Last write time: " + fileInfo.LastWriteTime);
+            }
+            else
+            {
+                listInfo.Items.Add("File does not exist");
+            }
         }
     }
 }
