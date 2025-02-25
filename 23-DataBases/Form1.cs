@@ -124,10 +124,11 @@ namespace _23_DataBases
             try
             {
                 conn.Open();
+
                 SQLiteCommand cmd = new SQLiteCommand();
                 cmd.Connection = conn;
 
-                cmd.CommandText = "CREATE TABLE IF NOT EXISTS person (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT)";
+                cmd.CommandText = "CREATE TABLE person ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name NVARCHAR(50), email NVARCHAR(50))";
                 cmd.ExecuteNonQuery();
                 lblResult.Text = "Table created";
                 cmd.Dispose();
@@ -204,7 +205,102 @@ namespace _23_DataBases
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
+            #region SQLite
+            string dataBase = @"db\DBSQLite.db";
+            string strConn = @"Data Source = " + dataBase + "; Version = 3;";
 
+            SQLiteConnection conn = new SQLiteConnection(strConn);
+
+            try
+            {
+                conn.Open();
+
+                SQLiteCommand comando = new SQLiteCommand();
+                comando.Connection = conn;
+
+                comando.CommandText = "INSERT INTO person (name, email) VALUES ('" + tbName.Text + "', '" + tbEmail.Text + "')";
+
+                comando.ExecuteNonQuery();
+
+                lblResult.Text = "Register inserted SQLite";
+                comando.Dispose();
+            }
+            catch (Exception ex)
+            {
+                lblResult.Text = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            #endregion
+
+            #region MySql
+            //string strConnection = "server=127.0.0.1;User Id=root;database=curso_db;password=logan";
+            //MySqlConnection conexao = new MySqlConnection(strConnection);
+
+            //try
+            //{
+            //    conexao.Open();
+
+            //    MySqlCommand comando = new MySqlCommand();
+            //    comando.Connection = conexao;
+
+            //    int id = new Random(DateTime.Now.Millisecond).Next(0, 1000);
+            //    string nome = txtNome.Text;
+            //    string email = txtEmail.Text;
+
+            //    comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", '" + nome + "', '" + email + "')";
+
+            //    comando.ExecuteNonQuery();
+
+            //    labelResultado.Text = "Registro inserido MySql";
+            //    comando.Dispose();
+            //}
+            //catch (Exception ex)
+            //{
+            //    labelResultado.Text = ex.Message;
+            //}
+            //finally
+            //{
+            //    conexao.Close();
+            //}
+
+            #endregion
+
+            #region SQLServerCE
+            //string baseDados = Application.StartupPath + @"\db\DBSQLServer.sdf";
+            //string strConection = @"DataSource = " + baseDados + "; Password = '1234'";
+            //SqlCeConnection conexao = new SqlCeConnection(strConection);
+
+            //try
+            //{
+            //    conexao.Open();
+
+            //    SqlCeCommand comando = new SqlCeCommand();
+            //    comando.Connection = conexao;
+
+            //    int id = new Random(DateTime.Now.Millisecond).Next(0, 1000);
+            //    string nome = txtNome.Text;
+            //    string email = txtEmail.Text;
+
+            //    comando.CommandText = "INSERT INTO pessoas VALUES (" + id + ", '" + nome + "', '" + email + "')";
+
+            //    comando.ExecuteNonQuery();
+
+            //    labelResultado.Text = "Registro inserido Sql Server Ce";
+            //    comando.Dispose();
+            //}
+            //catch (Exception ex)
+            //{
+            //    labelResultado.Text = ex.Message;
+            //}
+            //finally
+            //{
+            //    conexao.Close();
+            //}
+
+            #endregion
         }
     }
 }

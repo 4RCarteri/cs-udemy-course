@@ -48,10 +48,10 @@
             // 
             // lblResult
             // 
-            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResult.Location = new System.Drawing.Point(12, 9);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(195, 37);
+            this.lblResult.Size = new System.Drawing.Size(359, 37);
             this.lblResult.TabIndex = 0;
             this.lblResult.Text = "Result";
             // 
@@ -119,7 +119,7 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(200, 9);
+            this.btnConnect.Location = new System.Drawing.Point(200, 53);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(75, 23);
             this.btnConnect.TabIndex = 6;
@@ -129,7 +129,7 @@
             // 
             // btnCreateTable
             // 
-            this.btnCreateTable.Location = new System.Drawing.Point(296, 12);
+            this.btnCreateTable.Location = new System.Drawing.Point(296, 53);
             this.btnCreateTable.Name = "btnCreateTable";
             this.btnCreateTable.Size = new System.Drawing.Size(84, 23);
             this.btnCreateTable.TabIndex = 7;
@@ -140,7 +140,7 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(200, 64);
+            this.btnInsert.Location = new System.Drawing.Point(200, 82);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 23);
             this.btnInsert.TabIndex = 8;
@@ -150,7 +150,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(200, 90);
+            this.btnSearch.Location = new System.Drawing.Point(200, 111);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 9;
@@ -159,7 +159,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(296, 64);
+            this.btnDelete.Location = new System.Drawing.Point(296, 82);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 10;
@@ -168,7 +168,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(296, 93);
+            this.btnEdit.Location = new System.Drawing.Point(296, 111);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 11;
