@@ -136,6 +136,7 @@
             this.btnCreateTable.Text = "Create Table";
             this.btnCreateTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCreateTable.UseVisualStyleBackColor = true;
+            this.btnCreateTable.Click += new System.EventHandler(this.btnCreateTable_Click);
             // 
             // btnInsert
             // 
@@ -145,6 +146,7 @@
             this.btnInsert.TabIndex = 8;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnSearch
             // 
