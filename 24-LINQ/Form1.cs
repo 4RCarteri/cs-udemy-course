@@ -98,5 +98,17 @@ namespace _24_LINQ
 
             listBox.Items.AddRange(res.ToArray());
         }
+
+        private void btnOrderBy_Click(object sender, EventArgs e)
+        {
+            listBox.Items.Clear();
+
+            var res = from product in products orderby product.Key select product;
+
+            foreach (var item in res)
+            {
+                listBox.Items.Add(item.Key + " - R$" + item.Value);
+            }
+        }
     }
 }
