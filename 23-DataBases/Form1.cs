@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SQLite;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _23_DataBases
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
         public Form1()
         {
@@ -91,7 +85,7 @@ namespace _23_DataBases
             string strConn = @"Data Source = " + dataBase + "; Version = 3;";
 
 
-            if(!File.Exists(dataBase))
+            if (!File.Exists(dataBase))
             {
                 SQLiteConnection.CreateFile(dataBase);
             }
@@ -102,7 +96,8 @@ namespace _23_DataBases
                 db.Open();
                 lblResult.Text = "Connected";
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 lblResult.Text = "Error " + ex;
             }
             finally
@@ -293,6 +288,128 @@ namespace _23_DataBases
             //}
             //catch (Exception ex)
             //{
+            //    labelResultado.Text = ex.Message;
+            //}
+            //finally
+            //{
+            //    conexao.Close();
+            //}
+
+            #endregion
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            dataGridList.Rows.Clear();
+            lblResult.Text = "";
+
+            #region SQLite
+            string dataBase = @"db\DBSQLite.db";
+            string strConn = @"Data Source = " + dataBase + "; Version = 3;";
+
+            SQLiteConnection conn = new SQLiteConnection(strConn);
+
+            try
+            {
+                string query = "SELECT * FROM person";
+
+                if (tbName.Text != "")
+                {
+                    query = "SELECT * FROM person WHERE name LIKE '%" + tbName.Text + "%'";
+                }
+
+                DataTable dt = new DataTable();
+                SQLiteDataAdapter da = new SQLiteDataAdapter(query, conn);
+
+                conn.Open();
+
+                da.Fill(dt);
+
+               foreach (DataRow dr in dt.Rows) {
+                    dataGridList.Rows.Add(dr.ItemArray);
+                }
+                lblResult.Text = "Search completed";
+
+            }
+            catch (Exception ex)
+            {
+                dataGridList.Rows.Clear();
+                lblResult.Text = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            #endregion
+
+            #region SQLServerCE
+            //string baseDados = Application.StartupPath + @"\db\DBSQLServer.sdf";
+            //string strConection = @"DataSource = " + baseDados + "; Password = '1234'";
+            //SqlCeConnection conexao = new SqlCeConnection(strConection);
+
+            //try
+            //{
+            //    string query = "SELECT * FROM pessoas";
+
+            //    if (txtNome.Text != "")
+            //    {
+            //        query = "SELECT * FROM pessoas WHERE nome LIKE '" + txtNome.Text + "'";
+            //    }
+
+            //    DataTable dados = new DataTable();
+            //    SqlCeDataAdapter adaptador = new SqlCeDataAdapter(query, strConection);
+            //    conexao.Open();
+
+            //    adaptador.Fill(dados);
+
+            //    foreach (DataRow linha in dados.Rows)
+            //    {
+            //        lista.Rows.Add(linha.ItemArray);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    lista.Rows.Clear();
+            //    labelResultado.Text = ex.Message;
+            //}
+            //finally
+            //{
+            //    conexao.Close();
+            //}
+
+            #endregion
+
+            #region MySql
+            //string strConection = "server=127.0.0.1;User Id=root;database=curso_db;password=logan";
+
+            //MySqlConnection conexao = new MySqlConnection(strConection);
+
+            //try
+            //{
+            //    string query = "SELECT * FROM pessoas";
+
+            //    if (txtNome.Text != "")
+            //    {
+            //        query = "SELECT * FROM pessoas WHERE nome LIKE '" + txtNome.Text + "'";
+            //    }
+
+            //    DataTable dados = new DataTable();
+
+            //    MySqlDataAdapter adaptador = new MySqlDataAdapter(query, strConection);
+
+            //    conexao.Open();
+
+            //    adaptador.Fill(dados);
+
+            //    foreach (DataRow linha in dados.Rows)
+            //    {
+            //        lista.Rows.Add(linha.ItemArray);
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    lista.Rows.Clear();
             //    labelResultado.Text = ex.Message;
             //}
             //finally
