@@ -48,15 +48,15 @@ namespace _24_LINQ
             states = new Dictionary<string, string>
             {
                 {"Rio de Janeiro", "Brazil"},
-                {"Istanbul", "Turkey"},
+                {"São Paulo", "Brazil"},
                 {"New York", "USA"},
-                {"London", "UK"},
-                {"Paris", "France"},
-                {"Berlin", "Germany"},
+                {"California", "USA"},
                 {"Tokyo", "Japan"},
-                {"Moscow", "Russia"},
-                {"Rome", "Italy"},
-                {"Madrid", "Spain"}
+                {"Kyoto", "Japan"},
+                {"Paris", "France"},
+                {"Lyon", "France"},
+                {"Berlin", "Germany"},
+                {"Munich", "Germany"}
             };
         }
 
@@ -108,6 +108,22 @@ namespace _24_LINQ
             foreach (var item in res)
             {
                 listBox.Items.Add(item.Key + " - R$" + item.Value);
+            }
+        }
+
+        private void btnGroupBy_Click(object sender, EventArgs e)
+        {
+            listBox.Items.Clear();
+
+            var res = from state in states orderby state.Key group state by state.Value;
+
+            foreach (var item in res)
+            {
+                listBox.Items.Add(item.Key);
+                foreach (var city in item)
+                {
+                    listBox.Items.Add("\t" + city.Key);
+                }
             }
         }
     }
