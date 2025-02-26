@@ -155,5 +155,20 @@ namespace _24_LINQ
             biggerName = names.Aggregate((longer, next) => { return longer.Length > next.Length ? longer : next; });
             listBox.Items.Add("Bigger name: " + biggerName);
         }
+
+        private void btnOperators_Click(object sender, EventArgs e)
+        {
+            int first = numbers.FirstOrDefault();
+            listBox.Items.Add("First: " + first);
+
+            int last = numbers.LastOrDefault();
+            listBox.Items.Add("Last: " + last);
+
+            int emelemntAt = numbers.ElementAtOrDefault(5);
+            listBox.Items.Add("Element at 5: " + emelemntAt);
+
+            var res = (from product in products where product.Value > 1000 select product).FirstOrDefault();
+            listBox.Items.Add("First product over 1000: " + res.Key + " - R$" + res.Value);
+        }
     }
 }
