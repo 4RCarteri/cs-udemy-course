@@ -23,7 +23,7 @@ namespace _24_LINQ
 
             names = new List<string>
             {
-                "Ali", "Veli", "Deli", "Mehmet", "Ayşe", "Fatma", "Hayriye", "Hüseyin", "Hasan", "Hüseyin"
+                "Ali", "Veli", "Deli", "Mehmeteee", "Ayşe", "Fatma", "Hayriye", "Hüseyin", "Hasan", "Hüseyin"
             };
 
             numbers = new List<int>
@@ -125,6 +125,35 @@ namespace _24_LINQ
                     listBox.Items.Add("\t" + city.Key);
                 }
             }
+        }
+
+        private void btnAggregation_Click(object sender, EventArgs e)
+        {
+            listBox.Items.Clear();
+
+            var count1 = names.Count();
+            listBox.Items.Add(count1 + " names");
+
+            var count2 = (from name in names where name.StartsWith("H") select name).Count();
+            listBox.Items.Add(count2 + " names starting with H");
+
+            var mean2 = (from product in products select product.Value).Average();
+            listBox.Items.Add("Mean: " + mean2);
+
+            var sum2 = (from product in products where product.Value > 1000 select product.Value).Sum();
+            listBox.Items.Add("Sum: " + sum2);
+
+            var min2 = (from num in numbers select num).Min();
+            listBox.Items.Add("Min: " + min2);
+
+            var max2 = (from num in numbers select num).Max();
+            listBox.Items.Add("Max: " + max2);
+
+            string biggerName = (from name in names orderby name.Length descending select name).First();
+            listBox.Items.Add("Bigger name: " + biggerName);
+            
+            biggerName = names.Aggregate((longer, next) => { return longer.Length > next.Length ? longer : next; });
+            listBox.Items.Add("Bigger name: " + biggerName);
         }
     }
 }
