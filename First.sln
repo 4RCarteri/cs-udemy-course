@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27-Socket client", "27-Sock
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27-TransferFileServer", "27-TransferFileServer\27-TransferFileServer.csproj", "{81ABAA2F-49A4-4005-A621-EFACACF3E904}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27-TransferFileClient", "27-TransferFileClient\27-TransferFileClient.csproj", "{1672B2B3-D494-4535-AE14-28EAB765366B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{81ABAA2F-49A4-4005-A621-EFACACF3E904}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81ABAA2F-49A4-4005-A621-EFACACF3E904}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81ABAA2F-49A4-4005-A621-EFACACF3E904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1672B2B3-D494-4535-AE14-28EAB765366B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1672B2B3-D494-4535-AE14-28EAB765366B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1672B2B3-D494-4535-AE14-28EAB765366B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1672B2B3-D494-4535-AE14-28EAB765366B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
