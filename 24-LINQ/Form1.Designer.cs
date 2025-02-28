@@ -36,6 +36,7 @@
             this.btnGroupBy = new System.Windows.Forms.Button();
             this.btnAggregation = new System.Windows.Forms.Button();
             this.btnOperators = new System.Windows.Forms.Button();
+            this.btnLambda = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox
@@ -114,11 +115,22 @@
             this.btnOperators.UseVisualStyleBackColor = true;
             this.btnOperators.Click += new System.EventHandler(this.btnOperators_Click);
             // 
+            // btnLambda
+            // 
+            this.btnLambda.Location = new System.Drawing.Point(270, 298);
+            this.btnLambda.Name = "btnLambda";
+            this.btnLambda.Size = new System.Drawing.Size(185, 31);
+            this.btnLambda.TabIndex = 8;
+            this.btnLambda.Text = "Lambda";
+            this.btnLambda.UseVisualStyleBackColor = true;
+            this.btnLambda.Click += new System.EventHandler(this.btnLambda_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 450);
+            this.Controls.Add(this.btnLambda);
             this.Controls.Add(this.btnOperators);
             this.Controls.Add(this.btnAggregation);
             this.Controls.Add(this.btnGroupBy);
@@ -144,6 +156,7 @@
         private System.Windows.Forms.Button btnGroupBy;
         private System.Windows.Forms.Button btnAggregation;
         private System.Windows.Forms.Button btnOperators;
+        private System.Windows.Forms.Button btnLambda;
     }
 }
 

@@ -170,5 +170,27 @@ namespace _24_LINQ
             var res = (from product in products where product.Value > 1000 select product).FirstOrDefault();
             listBox.Items.Add("First product over 1000: " + res.Key + " - R$" + res.Value);
         }
+
+        private void btnLambda_Click(object sender, EventArgs e)
+        {
+            var res = from name in names select name;
+            res = names.Select(name => name);
+            listBox.Items.AddRange(res.ToArray());
+
+            var res2 = from name in names where name.StartsWith("H") select name;
+            res2 = names.Where(name => name.StartsWith("H"));
+            listBox.Items.AddRange(res2.ToArray());
+
+            var res3 = from product in products orderby product.Key select product;
+            res3 = products.OrderBy(product => product.Key);
+            listBox.Items.AddRange(res3.Select(product => product.Key + " - R$" + product.Value).ToArray());
+
+            var res4 = from state in states orderby state.Key group state by state.Value;
+            res4 = states.OrderBy(state => state.Key).GroupBy(state => state.Value);
+            listBox.Items.AddRange(res4.ToArray());
+
+
+
+        }
     }
 }
