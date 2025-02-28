@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _25_GDI_
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
         public Form1()
         {
@@ -27,6 +21,34 @@ namespace _25_GDI_
             Graphics g = Graphics.FromImage(sheet);
 
             g.Clear(Color.White);
+
+            #region row
+            // Create a pen
+            Pen pen = new Pen(Color.Black, 5);
+            
+            Brush brush = new SolidBrush(Color.Black);
+            Pen pen1 = new Pen(brush, 10);
+
+            // Create a point
+            Point point1 = new Point(100, 0);
+            Point point2 = new Point(300, 500);
+            
+            //g.DrawLine(pen, point1, point2);
+            //g.DrawLine(pen1, 200, 250, 300, 400);
+
+            #endregion
+
+            #region rows
+            Point[] points = {
+                new Point(100, 100),
+                new Point(200, 200),
+                new Point(300, 100),
+                new Point(400, 200),
+                new Point(500, 100)
+            };
+
+            g.DrawLines(pen, points);
+            #endregion
 
             pictureBox1.BackgroundImage = sheet;
 
