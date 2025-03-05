@@ -33,7 +33,7 @@ namespace _27_TransferFileClient
                 {
                     LabelMessage.Invoke(new Action(() =>
                     {
-                        LabelMessage.Color = Color.Red;
+                        LabelMessage.BackColor = Color.Red;
                         LabelMessage.Text = "File size is too large";
                     }));
                     return;
