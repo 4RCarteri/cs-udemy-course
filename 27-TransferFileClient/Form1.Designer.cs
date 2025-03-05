@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnSend = new System.Windows.Forms.Button();
-            this.inkFile = new System.Windows.Forms.LinkLabel();
+            this.linkFile = new System.Windows.Forms.LinkLabel();
             this.txtIP = new System.Windows.Forms.TextBox();
             this.numPort = new System.Windows.Forms.NumericUpDown();
             this.lblStatus = new System.Windows.Forms.Label();
@@ -55,16 +55,18 @@
             this.btnSend.TabIndex = 1;
             this.btnSend.Text = "Send File";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
-            // inkFile
+            // linkFile
             // 
-            this.inkFile.AutoSize = true;
-            this.inkFile.Location = new System.Drawing.Point(35, 151);
-            this.inkFile.Name = "inkFile";
-            this.inkFile.Size = new System.Drawing.Size(59, 13);
-            this.inkFile.TabIndex = 2;
-            this.inkFile.TabStop = true;
-            this.inkFile.Text = "Choose file";
+            this.linkFile.AutoSize = true;
+            this.linkFile.Location = new System.Drawing.Point(35, 151);
+            this.linkFile.Name = "linkFile";
+            this.linkFile.Size = new System.Drawing.Size(62, 13);
+            this.linkFile.TabIndex = 2;
+            this.linkFile.TabStop = true;
+            this.linkFile.Text = "Select a file";
+            this.linkFile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.inkFile_LinkClicked);
             // 
             // txtIP
             // 
@@ -112,7 +114,7 @@
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.numPort);
             this.Controls.Add(this.txtIP);
-            this.Controls.Add(this.inkFile);
+            this.Controls.Add(this.linkFile);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -127,7 +129,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSend;
-        private System.Windows.Forms.LinkLabel inkFile;
+        private System.Windows.Forms.LinkLabel linkFile;
         private System.Windows.Forms.TextBox txtIP;
         private System.Windows.Forms.NumericUpDown numPort;
         private System.Windows.Forms.Label lblStatus;

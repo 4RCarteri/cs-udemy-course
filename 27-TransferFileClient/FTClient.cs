@@ -13,8 +13,8 @@ namespace _27_TransferFileClient
         static IPEndPoint ClientIP;
         static Socket ClientSocket;
         public static string IPAddress = "127.0.0.1";
-        public static int HostPort;
-        public static string FolderFile = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        public static int HostPort = 1000;
+        public static string PastaRecepcaoArquivos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
         public static Label LabelMessage;
 
         public static void SendFile(string file)
@@ -26,8 +26,7 @@ namespace _27_TransferFileClient
                 string folder = file.Substring(0, file.LastIndexOf(@"\") + 1);
                 file = file.Substring(file.LastIndexOf(@"\") + 1);
 
-                ClientSocket.Connect(ClientIP);
-                byte[] fileName = Encoding.ASCII.GetBytes(file);
+                byte[] fileName = Encoding.UTF8.GetBytes(file);
 
                 if (fileName.Length > 50000 * 1024)
                 {
@@ -45,7 +44,7 @@ namespace _27_TransferFileClient
                 byte[] fileNameLen = BitConverter.GetBytes(fileName.Length);
 
                 fileNameLen.CopyTo(clientData, 0);
-                fileName.CopyTo(clientData, 0);
+                fileName.CopyTo(clientData, 4);
                 fileData.CopyTo(clientData, 4 + fileName.Length);
                 ClientSocket.Connect(ClientIP);
                 ClientSocket.Send(clientData, 0, clientData.Length, 0);
@@ -67,7 +66,6 @@ namespace _27_TransferFileClient
             }
             finally
             {
-                ClientSocket.Disconnect(false);
                 ClientSocket.Close();
             }
         }
