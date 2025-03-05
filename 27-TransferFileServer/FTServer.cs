@@ -34,7 +34,7 @@ namespace _27_TransferFileServer
 
             try
             {
-                ServerSocket.Listen(10);
+                ServerSocket.Listen(100);
                 ListMessage.Invoke(new Action(() =>
                 {
                     ListMessage.Items.Add("Server started");
@@ -45,10 +45,10 @@ namespace _27_TransferFileServer
                 Socket clientSocket = ServerSocket.Accept();
                 clientSocket.ReceiveBufferSize = 16384;
 
-                byte[] clientData = new byte[124 * 50000];
+                byte[] clientData = new byte[1024 * 50000];
                 int receivedBytesLen = clientSocket.Receive(clientData, clientData.Length, 0);
                 int fileNameLen = BitConverter.ToInt32(clientData, 0);
-                string fileName = Encoding.ASCII.GetString(clientData, 4, fileNameLen);
+                string fileName = Encoding.UTF8.GetString(clientData, 4, fileNameLen);
 
                 BinaryWriter bWrite = new BinaryWriter(File.Open(HostFolder + fileName, FileMode.Append));
                 bWrite.Write(clientData, 4 + fileNameLen, receivedBytesLen - 4 - fileNameLen);
