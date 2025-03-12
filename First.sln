@@ -69,6 +69,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27-ChatServer", "27-ChatSer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27-ChatClient", "27-ChatClient\27-ChatClient.csproj", "{75E1B18B-D753-43FE-B0C2-F4432F6A18E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28-Matematica", "28-Matematica\28-Matematica.csproj", "{FACB0FDD-00F5-4BA4-BA76-3D8D3BB978A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28-Operations", "28-Operations\28-Operations.csproj", "{BCE1DF0E-4049-4418-8893-130EB77AF0E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +211,14 @@ Global
 		{75E1B18B-D753-43FE-B0C2-F4432F6A18E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75E1B18B-D753-43FE-B0C2-F4432F6A18E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75E1B18B-D753-43FE-B0C2-F4432F6A18E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACB0FDD-00F5-4BA4-BA76-3D8D3BB978A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACB0FDD-00F5-4BA4-BA76-3D8D3BB978A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACB0FDD-00F5-4BA4-BA76-3D8D3BB978A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACB0FDD-00F5-4BA4-BA76-3D8D3BB978A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE1DF0E-4049-4418-8893-130EB77AF0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE1DF0E-4049-4418-8893-130EB77AF0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE1DF0E-4049-4418-8893-130EB77AF0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE1DF0E-4049-4418-8893-130EB77AF0E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
