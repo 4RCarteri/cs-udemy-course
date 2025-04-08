@@ -81,6 +81,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "29-EncriptFiles", "29-Encri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31-Assync programming", "31-Assync programming\31-Assync programming.csproj", "{9110D68C-BD9D-40AB-93FE-39508F4392A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31-LambdaExpressions", "31-LambdaExpressions\31-LambdaExpressions.csproj", "{39AA75DA-9AFB-42BF-B367-65E083694839}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31-Graphs", "31-Graphs\31-Graphs.csproj", "{860B3327-589B-46B3-9B78-325E1677EE7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +247,14 @@ Global
 		{9110D68C-BD9D-40AB-93FE-39508F4392A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9110D68C-BD9D-40AB-93FE-39508F4392A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9110D68C-BD9D-40AB-93FE-39508F4392A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AA75DA-9AFB-42BF-B367-65E083694839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AA75DA-9AFB-42BF-B367-65E083694839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AA75DA-9AFB-42BF-B367-65E083694839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AA75DA-9AFB-42BF-B367-65E083694839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{860B3327-589B-46B3-9B78-325E1677EE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{860B3327-589B-46B3-9B78-325E1677EE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{860B3327-589B-46B3-9B78-325E1677EE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{860B3327-589B-46B3-9B78-325E1677EE7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
