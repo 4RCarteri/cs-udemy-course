@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31-Graphs", "31-Graphs\31-G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31-CaptureKeys", "31-CaptureKeys\31-CaptureKeys.csproj", "{6BD580BD-FAA1-4052-9D7F-50EC3FFB423D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31-CylinderVolume", "31-CylinderVolume\31-CylinderVolume.csproj", "{7F6173C2-4E45-473A-858F-7BC0F0836910}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +263,10 @@ Global
 		{6BD580BD-FAA1-4052-9D7F-50EC3FFB423D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BD580BD-FAA1-4052-9D7F-50EC3FFB423D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BD580BD-FAA1-4052-9D7F-50EC3FFB423D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F6173C2-4E45-473A-858F-7BC0F0836910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F6173C2-4E45-473A-858F-7BC0F0836910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F6173C2-4E45-473A-858F-7BC0F0836910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F6173C2-4E45-473A-858F-7BC0F0836910}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
