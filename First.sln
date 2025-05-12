@@ -89,6 +89,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31-CaptureKeys", "31-Captur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31-CylinderVolume", "31-CylinderVolume\31-CylinderVolume.csproj", "{7F6173C2-4E45-473A-858F-7BC0F0836910}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32-Names", "32-Names\32-Names.csproj", "{44D226D8-204F-4DD7-BB87-066BAADDF532}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{7F6173C2-4E45-473A-858F-7BC0F0836910}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F6173C2-4E45-473A-858F-7BC0F0836910}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F6173C2-4E45-473A-858F-7BC0F0836910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44D226D8-204F-4DD7-BB87-066BAADDF532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44D226D8-204F-4DD7-BB87-066BAADDF532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44D226D8-204F-4DD7-BB87-066BAADDF532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44D226D8-204F-4DD7-BB87-066BAADDF532}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
